@@ -7,6 +7,9 @@
 Pour toute modification aller sur votre branche en 1er avec la commande 
 #git switch nom_de_votre_brache
 
+pour envoyé votre modif faire 
+#git push origin nom_de_votre_branche
+
 avant push toujour faire un 
 #git pull
 #git commit "raison de votre maj"
