@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail du film - VOD Reco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="sidebar" class="sidebar">
+        <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Recommandations</a></li>
+            <li><a href="login.html">Connexion</a></li>
+        </ul>
+    </nav>
+    <main id="main-content">
+        <section class="film-detail">
+            <div class="film-detail-header">
+                <img id="film-detail-img" src="https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg" alt="Inception">
+                <div class="film-detail-info">
+                    <h1 id="film-detail-title">Inception</h1>
+                    <p id="film-detail-desc">Un voleur expérimenté, le meilleur dans l'art dangereux de l'extraction d'informations secrètes, est engagé pour implanter une idée dans l'esprit d'un PDG.</p>
+                    <ul>
+                        <li><strong>Année :</strong> <span id="film-detail-annee">2010</span></li>
+                        <li><strong>Budget :</strong> <span id="film-detail-budget">160 000 000 $</span></li>
+                        <li><strong>Note :</strong> <span id="film-detail-rating">8.8/10</span></li>
+                        <li><strong>Acteurs :</strong> <span id="film-detail-acteurs">Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page</span></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Recommandations similaires</h2>
+            <div id="film-reco-ligne" class="reco-ligne">
+                <!-- Films recommandés similaires -->
+                <div class="reco-film-card">
+                    <img src="https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg" alt="Interstellar">
+                    <div class="film-info">
+                        <h4>Interstellar</h4>
+                        <p>2014</p>
+                    </div>
+                </div>
+                <div class="reco-film-card">
+                    <img src="https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg" alt="Avengers: Endgame">
+                    <div class="film-info">
+                        <h4>Avengers: Endgame</h4>
+                        <p>2019</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

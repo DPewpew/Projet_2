@@ -1,0 +1,1 @@
+Ce dossier peut contenir des images d'exemple pour les films du site.

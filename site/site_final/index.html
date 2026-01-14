@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - VOD Reco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="sidebar" class="sidebar">
+        <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Recommandations</a></li>
+            <li><a href="login.html">Connexion</a></li>
+        </ul>
+    </nav>
+    <main id="main-content">
+        <header>
+            <h1>Bienvenue sur les recommandation pour les cinéma en Creuse</h1>
+            <button id="darkModeBtn">🌙</button>
+        </header>
+        <section class="reco-switcher">
+            <button class="reco-btn active" data-categorie="segnior">Segnior</button>
+            <button class="reco-btn" data-categorie="jeune">Jeunesse</button>
+            <button class="reco-btn" data-categorie="famille">Famille</button>
+        </section>
+        <section id="reco-ligne" class="reco-ligne">
+            <!-- Les films recommandés s'affichent ici -->
+        </section>
+        <section class="all-films">
+            <h2>Tous les films</h2>
+            <form id="searchForm" class="search-bar" autocomplete="off">
+                <input type="text" id="searchInput" placeholder="Rechercher un film..." />
+                <button type="submit">🔍</button>
+            </form>
+            <div id="films-grid" class="films-grid">
+                <!-- Les films s'affichent ici -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
