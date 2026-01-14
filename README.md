@@ -4,11 +4,15 @@
 # autor: Daymon, Kevin, Larbi
 
 
-Pour toute modification aller sur votre branche en 1er avec la commande 
-#git switch nom_de_votre_brache
+#git pull quand vous etes sur (main) au démarrage
 
-avant push toujour faire un 
-#git pull
-#git commit "raison de votre maj"
 
+#Pour toute modification aller sur votre branche en 1er avec la commande 
+#git switch nom_de_votre_branche
+
+#pour envoyé vos modif
+#git push origin nom_de_votre_branche
+
+#git commit "raison de votre maj" 
+#le git commit pour indiqué les changement que vous avez fait
 
