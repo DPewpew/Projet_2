@@ -10,28 +10,27 @@ st.set_page_config(page_title="Projet 2 — Graphs (v1)", layout="wide")
 
 st.title("Projet 2 — Étude de marché (Creuse) : Graphs v1")
 
-BASE = "https://raw.githubusercontent.com/DPewpew/projet2-data/main/data/"
-
+BASE = "https://raw.githubusercontent.com/DPewpew/Projet_2/main/data/"
 # -----------------------------
 # Chargement (avec cache)
 # -----------------------------
 @st.cache_data
 def load_data():
     # -------- INSEE --------
-    df_age = pd.read_csv(BASE + "insee/insee_age.csv")
-    df_menages = pd.read_csv(BASE + "insee/insee_menages.csv")
-    df_pauvrete = pd.read_csv(BASE + "insee/insee_pauvrete.csv")
-    df_sal_age = pd.read_csv(BASE + "insee/insee_salaires_age.csv")
-    df_sal_csp = pd.read_csv(BASE + "insee/insee_salaires_csp.csv")
+    df_age = pd.read_csv(BASE + "INSEE/insee_age.csv")
+    df_menages = pd.read_csv(BASE + "INSEE/insee_menages.csv")
+    df_pauvrete = pd.read_csv(BASE + "INSEE/insee_pauvrete.csv")
+    df_sal_age = pd.read_csv(BASE + "INSEE/insee_salaires_age.csv")
+    df_sal_csp = pd.read_csv(BASE + "INSEE/insee_salaires_csp.csv")
 
     # -------- CNC --------
-    df_cnc_ecrans = pd.read_csv(BASE + "cnc/cnc_ecrans.csv")
-    df_cnc_entrees = pd.read_csv(BASE + "cnc/cnc_entrees.csv")
-    df_cnc_etab = pd.read_csv(BASE + "cnc/cnc_etablissements.csv")
-    df_cnc_fauteuils = pd.read_csv(BASE + "cnc/cnc_fauteuils.csv")
-    df_cnc_indice = pd.read_csv(BASE + "cnc/cnc_indice_frequentation.csv")
-    df_cnc_seances = pd.read_csv(BASE + "cnc/cnc_seances.csv")
-    df_cnc_taux_occ = pd.read_csv(BASE + "cnc/cnc_taux_occupation.csv")
+    df_cnc_ecrans = pd.read_csv(BASE + "CNC/cnc_ecrans.csv")
+    df_cnc_entrees = pd.read_csv(BASE + "CNC/cnc_entrees.csv")
+    df_cnc_etab = pd.read_csv(BASE + "CNC/cnc_etablissements.csv")
+    df_cnc_fauteuils = pd.read_csv(BASE + "CNC/cnc_fauteuils.csv")
+    df_cnc_indice = pd.read_csv(BASE + "CNC/cnc_indice_frequentation.csv")
+    df_cnc_seances = pd.read_csv(BASE + "CNC/cnc_seances.csv")
+    df_cnc_taux_occ = pd.read_csv(BASE + "CNC/cnc_taux_occupation.csv")
 
     return {
         "df_age": df_age,
