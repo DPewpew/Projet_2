@@ -16,3 +16,5 @@
 #git commit "raison de votre maj" 
 #le git commit pour indiqué les changement que vous avez fait
 
+# pour lancer le site de presentation faire un cd pour aller dedans et lancer la commande dans le terminal 
+#streamlit run nom_du_fichier
