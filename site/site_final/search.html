@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de recherche - VOD Reco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="sidebar" class="sidebar">
+        <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Recommandations</a></li>
+            <li><a href="login.html">Connexion</a></li>
+        </ul>
+    </nav>
+    <main id="main-content">
+        <header>
+            <h1>Résultats de recherche</h1>
+            <button id="darkModeBtn">🌙</button>
+        </header>
+        <section class="search-results">
+            <h2>Films trouvés</h2>
+            <div id="search-films-grid" class="films-grid">
+                <!-- Les films trouvés s'affichent ici -->
+            </div>
+        </section>
+        <section class="reco-similaire">
+            <h2>Recommandations similaires</h2>
+            <div id="search-reco-ligne" class="reco-ligne">
+                <!-- Les recommandations similaires s'affichent ici -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
